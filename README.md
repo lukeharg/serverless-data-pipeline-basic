@@ -11,3 +11,6 @@ This is a completely fabricated Australian superannuation contributions FSI data
 ```typescript
 new Bucket(this, 'data-demo-123456789012-us-east-1');
 ```
+
+## References
+1. Clicker GIFs were created using [LICEcap](https://www.cockos.com/licecap/), which is awesome.
