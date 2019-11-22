@@ -9,7 +9,16 @@ This is a completely fabricated Australian superannuation contributions FSI data
 ![Console Create S3 Bucket](console-create-s3-bucket.gif)
 ### Via the AWS CDK (Awesome)
 ```typescript
-new Bucket(this, 'data-demo-123456789012-us-east-1');
+import cdk = require('@aws-cdk/core');
+import s3 = require('@aws-cdk/aws-s3');
+
+export class DataDemoStack extends cdk.Stack {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    new Bucket(this, 'data-demo-123456789012-us-east-1');
+  }
+}
 ```
 
 ## References
